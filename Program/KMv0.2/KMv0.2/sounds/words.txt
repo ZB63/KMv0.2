@@ -1,0 +1,6 @@
+dysk
+akademia
+apel
+dywizja
+true
+false
