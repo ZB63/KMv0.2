@@ -25,6 +25,11 @@ public:
 		sound.play();
 	}
 
+	string return_text()
+	{
+		return txt;
+	}
+
 };
 
 #endif /*SOUND_FILE*/
