@@ -16,7 +16,7 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 
 	// play("wstep_tryb_nauki") Aby anulowac glos wprowadzajacy w tryb nauki nacisnij enter
 
-
+	
 	sf::Event zdarzenie;
 
 	Box sound;
@@ -30,7 +30,11 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 		std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
 
-
+	sf::Text tekst1(string(1, key), arial);
+	tekst1.setCharacterSize(300);
+	tekst1.setColor(sf::Color::Yellow);
+	tekst1.setStyle(sf::Text::Bold);
+	tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
 
 	while (okno.isOpen())
 	{
@@ -48,16 +52,20 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 					{
 						return;
 					}
+
+					if (zdarzenie.type == sf::Event::Closed)
+					{
+						okno.close();
+					}
+						
 					if (key < 96 && key>64)
 					{
 						sound.play(string(1, key)); //konwersja char do string string(1, key)
 
-						okno.clear();//
-						sf::Text tekst1(string(1, key), arial);
-						tekst1.setCharacterSize(300);
-						tekst1.setColor(sf::Color::Yellow);
-						tekst1.setStyle(sf::Text::Bold);
-						tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
+						okno.clear();
+						
+						tekst1.setString(string(1, key));
+
 						okno.draw(tekst1);
 						okno.display();//wyswietalnie tekstu
 

@@ -38,7 +38,11 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 		std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	}; // wczytywanie czcionki
 
-
+	sf::Text tekst1(key1, arial);
+	tekst1.setCharacterSize(300);
+	tekst1.setColor(sf::Color::Yellow);
+	tekst1.setStyle(sf::Text::Bold);
+	tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
 
 	while (okno.isOpen())
 	{
@@ -51,11 +55,9 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 
 
 		okno.clear();
-		sf::Text tekst1(key1, arial);
-		tekst1.setCharacterSize(300);
-		tekst1.setColor(sf::Color::Yellow);
-		tekst1.setStyle(sf::Text::Bold);
-		tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
+
+		tekst1.setString(key1);
+
 		okno.draw(tekst1);
 		okno.display();//wyswietalnie tekstu
 

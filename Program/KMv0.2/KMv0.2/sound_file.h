@@ -25,7 +25,7 @@ public:
 		sound.play();
 	}
 
-	string return_text()
+	std::string return_text()
 	{
 		return txt;
 	}

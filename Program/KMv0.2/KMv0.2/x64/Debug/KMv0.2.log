@@ -1,4 +1,6 @@
-﻿  KMv0.2.cpp
+﻿  Pomijanie... (nie wykryto odpowiednich zmian)
+  stdafx.cpp
+  KMv0.2.cpp
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\start.h(62): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\start.h(68): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\start.h(74): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
@@ -19,16 +21,20 @@ f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\start.h(8
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\start.h(94): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
   f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(30): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(58): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(56): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(45): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(43): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
   f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\easy_mode.h(32): warning C4101: "key": lokalna zmienna, do której nie istnieje odwołanie
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\training_mode.h(60): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\training_mode.h(58): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\training_mode.h(37): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\training_mode.h(35): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
   f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\training_mode.h(24): warning C4101: "random": lokalna zmienna, do której nie istnieje odwołanie
 f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(23): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(22): warning C4101: "zdarzenie": lokalna zmienna, do której nie istnieje odwołanie
-f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(28): warning C4101: "key": lokalna zmienna, do której nie istnieje odwołanie
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(44): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(50): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(42): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\visualstudio\program\kmv0.2\kmv0.2\medium_mode.h(48): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
   KMv0.2.vcxproj -> F:\Programowanie\Operazionen Anfang\VisualStudio\Program\KMv0.2\x64\Debug\KMv0.2.exe
   KMv0.2.vcxproj -> F:\Programowanie\Operazionen Anfang\VisualStudio\Program\KMv0.2\x64\Debug\KMv0.2.pdb (Partial PDB)

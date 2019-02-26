@@ -63,15 +63,15 @@ public:
 		return true;
 	}
 
-	string random()// zwraca losowy string
+	std::string random()// zwraca losowy string
 	{
-
 		unsigned int i = rand() % tab.size();
 		unsigned int j = 0;
 
 		//w uposledzony sposob ustawiam sie na wylosowanym elemencie
 		for (std::map<std::string, Sound_file>::iterator it = tab.begin(); it != tab.end(); it++) {
 			if (j == i) return it->second.return_text();
+			j++;
 		}
 
 		return "Error";//tu cos trzeba wymyslec, tak chyba nie moze zostac
