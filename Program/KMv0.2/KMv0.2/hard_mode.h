@@ -1,3 +1,8 @@
+#ifndef HARD_MODE
+#define HARD_MODE
+#include "stdafx.h"
+
+
 void hard_mode(sf::RenderWindow& okno, int x, int y)
 {
 	sf::Event zdarzenie;
@@ -100,3 +105,5 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 	}
 
 }
+
+#endif

@@ -3,6 +3,7 @@
 
 #include "stdafx.h"
 
+
 class Sound_file
 {
 private:

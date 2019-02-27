@@ -12,6 +12,8 @@ Oryginalne biblioteki i kompilator dostepne sa na stronie https://www.sfml-dev.o
 #include "medium_mode.h"
 #include "hard_mode.h"
 
+
+
 using namespace std;
 
 const int winWidth = 800;

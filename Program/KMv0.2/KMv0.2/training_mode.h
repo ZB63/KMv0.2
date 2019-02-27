@@ -5,6 +5,7 @@
 Funkcja easy_mode losuje pojedyncza litere i sprawdza czy zostal wcisniety poprawny klawisz
 */
 
+
 #include "stdafx.h"
 
 using namespace std;

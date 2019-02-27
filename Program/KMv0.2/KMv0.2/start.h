@@ -2,6 +2,8 @@
 
 #ifndef START_H
 #define START_H
+
+
 /*
 Funkcja menu_start zwraca liczbe odpowiadajaca trybowi jaki ma zostac
 aktywowany w glownej petli.

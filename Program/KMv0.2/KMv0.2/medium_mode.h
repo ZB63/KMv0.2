@@ -3,6 +3,7 @@
 #include "stdafx.h"
 using namespace std;
 
+
 void medium_mode(sf::RenderWindow& okno, int x, int y)
 {
 
