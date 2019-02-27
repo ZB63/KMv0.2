@@ -23,6 +23,7 @@
 //#include "training_mode.h"
 //#include "easy_mode.h"
 //#include "medium_mode.h"
+//#include "hard_mode.h"
 
 /*Standardowe biblioteki*/
 #include <iostream>

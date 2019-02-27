@@ -1,11 +1,16 @@
 // KMv0.2.cpp: Okreœla punkt wejœcia dla aplikacji konsoli.
-//
+/*
+!!!  ACHTUNG  !!!
+Do kompilowania tego projektu nalezy korzystac z VisualStudio i kompilatora MinGW 7.3.0 (64-bit)
+Oryginalne biblioteki i kompilator dostepne sa na stronie https://www.sfml-dev.org/download/sfml/2.5.1/
+*/
 
 #include "stdafx.h"
 #include "start.h"
 #include "easy_mode.h"
 #include "training_mode.h"
 #include "medium_mode.h"
+#include "hard_mode.h"
 
 using namespace std;
 
@@ -37,6 +42,10 @@ int main()
 		else if (choose_function == 3)
 		{
 			medium_mode(oknoAplikacji, winWidth, winHeight);
+		}
+		else if (choose_function == 4)
+		{
+			hard_mode(oknoAplikacji, winWidth, winHeight);
 		}
 		else if (choose_function == 0)
 		{
