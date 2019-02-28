@@ -62,7 +62,7 @@ void medium_mode(sf::RenderWindow& okno, int x, int y)
 						okno.close();
 
 					if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)
-						okno.close(); //wyjscie z programu
+						return; //wyjscie z programu
 
 					if (zdarzenie.type == sf::Event::KeyPressed)
 					{
