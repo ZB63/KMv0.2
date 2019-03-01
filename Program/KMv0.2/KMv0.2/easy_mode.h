@@ -26,6 +26,10 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 	okno.display();
 	Box sound;
 	sound.fill_box("letters");
+	Box intro_sounds;
+	intro_sounds.fill_box("intro");
+	
+
 	sf::Event zdarzenie;
 	srand(time(NULL));
 	int active_key, random;
@@ -43,6 +47,30 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 	tekst1.setColor(sf::Color::Yellow);
 	tekst1.setStyle(sf::Text::Bold);
 	tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
+
+	while (okno.isOpen())
+	{
+		intro_sounds.play("menuspeech");
+		while (1)
+		{
+			if (okno.pollEvent(zdarzenie))
+			{
+				if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)return;
+				else if (zdarzenie.type == sf::Event::KeyPressed)
+				{
+					intro_sounds.clear_sound();
+					break;
+				}
+				okno.clear();
+				okno.display();
+			}
+		}break;
+	}
+	//TUTORIAL 
+
+
+
+
 
 	while (okno.isOpen())
 	{
@@ -73,12 +101,14 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 				}
 				else if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == active_key)
 				{
-					sound.play("true");
+					
+					intro_sounds.play("true");
 					break;
 				}
 				else if (zdarzenie.type == sf::Event::KeyPressed)
 				{
-					sound.play("false");
+					
+					intro_sounds.play("false");
 					while (1)
 					{
 						okno.pollEvent(zdarzenie);
@@ -88,12 +118,12 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 						}
 						else if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == active_key)
 						{
-							sound.play("true");
+							intro_sounds.play("true");
 							break;
 						}
 						else if (zdarzenie.type == sf::Event::KeyPressed)
 						{
-							sound.play("false");
+							intro_sounds.play("false");
 						}
 					}
 					break;

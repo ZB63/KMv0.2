@@ -24,6 +24,10 @@ public:
 	{
 		sound.play();
 	}
+	void stop()
+	{
+		sound.stop();
+	}
 
 	std::string return_text()
 	{

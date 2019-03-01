@@ -63,6 +63,20 @@ public:
 		return true;
 	}
 
+	void clear_sound() // zwraca true kiedy udalo sie odtworzyc dzwiek
+	{
+
+		
+		for (std::map<std::string, Sound_file>::iterator it = tab.begin(); it !=tab.end(); ++it)
+		{ 
+		it->second.stop();
+		}
+			
+		
+
+		
+	}
+
 	std::string random()// zwraca losowy string
 	{
 		unsigned int i = rand() % tab.size();

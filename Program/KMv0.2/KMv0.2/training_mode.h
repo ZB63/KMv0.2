@@ -21,6 +21,8 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 
 	Box sound;
 	sound.fill_box("letters");
+	Box intro_sounds;
+	intro_sounds.fill_box("intro");
 	int random;
 	char key = 0;
 	string key1;
@@ -29,13 +31,36 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 	{
 		std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
-
-	sf::Text tekst1(string(1, key), arial);
-	tekst1.setCharacterSize(300);
+	sf::Text tekst1("PRESS ANY KEY", arial);
+	tekst1.setCharacterSize(50);
 	tekst1.setColor(sf::Color::Yellow);
 	tekst1.setStyle(sf::Text::Bold);
-	tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
+	tekst1.setPosition(x / 3 - 100, y / 20 * 3 +150);
 
+
+
+	while (okno.isOpen())
+	{
+		intro_sounds.play("menuspeech");
+		while (1)
+		{
+			if (okno.pollEvent(zdarzenie))
+			{
+				if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)return;
+				else if (zdarzenie.type == sf::Event::KeyPressed)
+				{
+					intro_sounds.clear_sound();
+					break;
+				}
+				okno.clear();
+				okno.draw(tekst1);
+				okno.display();
+			}
+		}break;
+	}
+	//TUTORIAL 
+	tekst1.setCharacterSize(300);
+	tekst1.setPosition(x / 3 + 50, y / 20 * 3 + 20);
 	while (okno.isOpen())
 	{
 

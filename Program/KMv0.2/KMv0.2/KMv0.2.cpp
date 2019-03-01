@@ -11,7 +11,7 @@ Oryginalne biblioteki i kompilator dostepne sa na stronie https://www.sfml-dev.o
 #include "training_mode.h"
 #include "medium_mode.h"
 #include "hard_mode.h"
-
+#include "help_mode.h"
 using namespace std;
 
 const int winWidth = 800;
@@ -27,9 +27,12 @@ int main()
 
 	sf::Sprite sprite1;
 	sprite1.setTexture(obraz1);
+	helpmode(oknoAplikacji, winWidth, winHeight);
+	
 
 	while (1)
 	{
+		
 		choose_function = menu_start(oknoAplikacji, winWidth, winHeight); // odpalamy menu
 		if (choose_function == 1)
 		{

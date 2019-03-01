@@ -13,10 +13,12 @@
 #include <SFML/Graphics/Font.hpp>
 #include <SFML/Graphics/Text.hpp>
 #include <SFML/Audio.hpp>
-
+#include <SFML/Audio.hpp>
+//#include <SFML/Time.hpp>
 /*Odtwarzanie dzwieku*/
 #include "sound_file.h"
 #include "box.h"
+#include "timer.h"
 
 /*Tryby gry*/
 //#include "start.h"

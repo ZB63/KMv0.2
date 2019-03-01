@@ -6,12 +6,36 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 	letters.fill_box("letters");
 	Box sentences;
 	sentences.fill_box("sentences");
-
+	Box intro_sounds;
+	intro_sounds.fill_box("intro");
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
 		std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
+
+
+	while (okno.isOpen())
+	{
+		intro_sounds.play("menuspeech");
+		while (1)
+		{
+			if (okno.pollEvent(zdarzenie))
+			{
+				if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)return;
+				else if (zdarzenie.type == sf::Event::KeyPressed)
+				{
+					intro_sounds.clear_sound();
+					break;
+				}
+				okno.clear();
+				okno.display();
+			}
+		}break;
+	}
+	//TUTORIAL 
+
+
 
 	string random = "";
 	string typed = "";
@@ -55,7 +79,7 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 						okno.close();
 
 					if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)
-						okno.close(); //wyjscie z programu
+						return; //powrot o menu
 
 					if (zdarzenie.type == sf::Event::KeyPressed)
 					{
@@ -64,18 +88,18 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 
 						if (key == random[i])
 						{
-							letters.play("true");
+							intro_sounds.play("true");
 							typed += key;
 							break;
 						}
 						else if (zdarzenie.key.code == sf::Keyboard::Space && random[i] == 32)
 						{
-							letters.play("true");
+							intro_sounds.play("true");
 							typed += " ";
 							break;
 						}
 						else {
-							letters.play("false");
+							intro_sounds.play("false");
 							lives--;
 							if (lives == 0) break;
 						}

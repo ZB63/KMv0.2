@@ -55,31 +55,31 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 	Poza tym wszystkie sa takie same :)
 	*/
 
-	sf::Text tekst1("Tryb uczenia", arial);
+	sf::Text tekst1("LEARNING", arial);
 	tekst1.setCharacterSize(font_size);
 	tekst1.setColor(sf::Color::Yellow);
 	tekst1.setStyle(sf::Text::Bold);
 	tekst1.setPosition(positions[0][0], positions[0][1]);  // < -- do zmiany
 
-	sf::Text tekst2("Litery", arial);
+	sf::Text tekst2("LETTERS", arial);
 	tekst2.setCharacterSize(font_size);
 	tekst2.setColor(sf::Color::Yellow);
 	tekst2.setStyle(sf::Text::Bold);
 	tekst2.setPosition(positions[1][0], positions[1][1]);// < -- do zmiany
 
-	sf::Text tekst3("Slowa", arial);
+	sf::Text tekst3("WORDS", arial);
 	tekst3.setCharacterSize(font_size);
 	tekst3.setColor(sf::Color::Yellow);
 	tekst3.setStyle(sf::Text::Bold);
 	tekst3.setPosition(positions[2][0], positions[2][1]);// < -- do zmiany
 
-	sf::Text tekst4("Zdania", arial);
+	sf::Text tekst4("SENTENCES", arial);
 	tekst4.setCharacterSize(font_size);
 	tekst4.setColor(sf::Color::Yellow);
 	tekst4.setStyle(sf::Text::Bold);
 	tekst4.setPosition(positions[3][0], positions[3][1]);// < -- do zmiany
 
-	sf::Text tekst5("Wyjscie", arial);
+	sf::Text tekst5("EXIT", arial);
 	tekst5.setCharacterSize(font_size);
 	tekst5.setColor(sf::Color::Yellow);
 	tekst5.setStyle(sf::Text::Bold);
@@ -98,11 +98,17 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 	/*
 	Lokalna petla odpowiedzialna za wyswietlanie poczatkowego menu.
 	*/
-
-	while (okno.isOpen()) {
-
+	Box intro_sounds;
+	intro_sounds.fill_box("intro");
+	intro_sounds.play("learningmode");
+	timer time;//czasomierz
+	
+	while (okno.isOpen()) 
+	{
+		
 		if (okno.pollEvent(zdarzenie))
 		{
+			
 			if (zdarzenie.type == sf::Event::Closed)
 				okno.close();
 
@@ -111,6 +117,7 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 
 			if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Enter)
 			{
+				intro_sounds.clear_sound();
 				if (i == 0)// tryb uczenia
 				{
 					okno.clear();
@@ -126,16 +133,48 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 			//Obsluga przesuwania znacznika w gore i w dol
 			if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Up)
 			{
+				time.reset();
 				if (i > 0) i--;
+
+				intro_sounds.clear_sound();
+				if (i == 0) { intro_sounds.play("learningmode"); } //nauka
+				else if (i == 1) intro_sounds.play("lettersmode"); // litery
+				else if (i == 2) intro_sounds.play("wordsmode"); // slowa
+				else if (i == 3) intro_sounds.play("sentencesmode"); // zdania
+				else if (i == 4) intro_sounds.play("exit"); // wyjscie z programu
+				
+
 			}
 
 			if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Down)
 			{
+				time.reset();
 				if (i < 4) i++;
+
+				intro_sounds.clear_sound();
+				if (i == 0) { intro_sounds.play("learningmode"); } //nauka
+				else if (i == 1) intro_sounds.play("lettersmode"); // litery
+				else if (i == 2) intro_sounds.play("wordsmode"); // slowa
+				else if (i == 3) intro_sounds.play("sentencesmode"); // zdania
+				else if (i == 4) intro_sounds.play("exit"); // wyjscie z programu
 			}
 
 		}
 
+		
+		if (time.passed_time() > 5.00)
+		{
+			time.reset();
+			intro_sounds.clear_sound();
+			if (i == 0) { intro_sounds.play("learningmode"); } //nauka
+			else if (i == 1) intro_sounds.play("lettersmode"); // litery
+			else if (i == 2) intro_sounds.play("wordsmode"); // slowa
+			else if (i == 3) intro_sounds.play("sentencesmode"); // zdania
+			else if (i == 4) intro_sounds.play("exit"); // wyjscie z programu
+		}
+		//cykliczna podpowiedz co 5 sekund
+
+		time.refresh();
 		okno.clear();
 
 		okno.draw(tekst1);
