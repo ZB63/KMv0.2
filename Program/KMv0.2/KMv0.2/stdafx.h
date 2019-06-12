@@ -36,11 +36,14 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
+#include <cstdio>
+#include <ctime>
 
 /*Zabic to*/
 #include <windows.h>
 #include <stdio.h>
 #include <tchar.h>
+
 
 #endif STDAFX
 // TODO: W tym miejscu odwo³aj siê do dodatkowych nag³ówków wymaganych przez program

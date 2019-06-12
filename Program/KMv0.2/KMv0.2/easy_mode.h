@@ -8,16 +8,14 @@ Funkcja easy_mode losuje pojedyncza litere i sprawdza czy zostal wcisniety popra
 #include "stdafx.h"
 using namespace std;
 
-void delay()
+void delay(int i)
 {
+	std::clock_t start;
+	start = std::clock();
 
-	for (int i = 0; i < 5000000; i++)
-	{
-		for (int i = 0; i < 80; i++)
-		{
-
-		}
-	}
+	while ((std::clock() -  start) / (double)1000 < i)
+	{ }
+	return;
 }
 
 
@@ -36,7 +34,7 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
-		std::cout << "Nie udalo sie zaladowac czcionki!\n";
+		//std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	}; // wczytywanie czcionki
 
 	sf::Text tekst1(key1, arial);
@@ -47,7 +45,7 @@ void easy_mode(sf::RenderWindow& okno, int x, int y)
 
 	while (okno.isOpen())
 	{
-		delay();//opoznienie
+		delay(1);//opoznienie
 		random = rand() % 25 + 65; // losuje litere :ascii code a=65...z=90
 		key1 = string(1, (char)random);//konwersja int na string
 

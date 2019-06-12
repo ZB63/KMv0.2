@@ -98,6 +98,20 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 	wskaznik.setPosition(positions[5][0], positions[i][1]);// < -- do zmiany
 
 	/*
+	Odmierzanie czasu w celu przypominania o aktualnym polozeniu uzytkownikowi.
+	*/
+
+	std::clock_t start;
+	start = std::clock();
+
+	/*
+	Pojemnik na dzwieki.
+	*/
+
+	Box sound;
+	sound.fill_box("warning");
+
+	/*
 	Lokalna petla odpowiedzialna za wyswietlanie poczatkowego menu.
 	*/
 
@@ -106,10 +120,14 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 		if (okno.pollEvent(zdarzenie))
 		{
 			if (zdarzenie.type == sf::Event::Closed)
-				okno.close();
+			{
+				return 0;
+			}
 
 			if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)
-				okno.close(); //wyjscie z programu
+			{
+				return 0;
+			}
 
 			if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Enter)
 			{
@@ -136,6 +154,13 @@ int menu_start(sf::RenderWindow& okno, int x, int y)
 				if (i < 4) i++;
 			}
 
+		}
+
+		if (((std::clock() - start) / (double)1000) > 5)
+		{
+			start = std::clock();
+			std::cout << "Elo" << std::endl;
+			sound.play("use arrows to select the mode");
 		}
 
 		okno.clear();

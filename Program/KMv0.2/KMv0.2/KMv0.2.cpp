@@ -13,7 +13,6 @@ Oryginalne biblioteki i kompilator dostepne sa na stronie https://www.sfml-dev.o
 #include "hard_mode.h"
 
 
-
 using namespace std;
 
 const int winWidth = 800;
@@ -52,7 +51,9 @@ int main()
 		else if (choose_function == 0)
 		{
 			oknoAplikacji.close();
+			return 0;
 		}
+		
 	}
 
 	return 0;

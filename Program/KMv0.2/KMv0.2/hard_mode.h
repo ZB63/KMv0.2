@@ -15,7 +15,7 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
-		std::cout << "Nie udalo sie zaladowac czcionki!\n";
+		//std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
 
 	string random = "";
