@@ -5,6 +5,7 @@
 Funkcja easy_mode losuje pojedyncza litere i sprawdza czy zostal wcisniety poprawny klawisz
 */
 
+
 #include "stdafx.h"
 
 using namespace std;
@@ -27,7 +28,7 @@ void training_mode(sf::RenderWindow& okno, int x, int y)
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
-		std::cout << "Nie udalo sie zaladowac czcionki!\n";
+		//std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
 
 	sf::Text tekst1(string(1, key), arial);

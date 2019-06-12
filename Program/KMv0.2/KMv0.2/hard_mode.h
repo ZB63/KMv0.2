@@ -1,3 +1,8 @@
+#ifndef HARD_MODE
+#define HARD_MODE
+#include "stdafx.h"
+
+
 void hard_mode(sf::RenderWindow& okno, int x, int y)
 {
 	sf::Event zdarzenie;
@@ -10,7 +15,7 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
-		std::cout << "Nie udalo sie zaladowac czcionki!\n";
+		//std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
 
 	string random = "";
@@ -55,7 +60,7 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 						okno.close();
 
 					if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)
-						okno.close(); //wyjscie z programu
+						return; //wyjscie z programu
 
 					if (zdarzenie.type == sf::Event::KeyPressed)
 					{
@@ -100,3 +105,5 @@ void hard_mode(sf::RenderWindow& okno, int x, int y)
 	}
 
 }
+
+#endif

@@ -3,6 +3,7 @@
 #include "stdafx.h"
 using namespace std;
 
+
 void medium_mode(sf::RenderWindow& okno, int x, int y)
 {
 
@@ -16,7 +17,7 @@ void medium_mode(sf::RenderWindow& okno, int x, int y)
 	sf::Font arial;
 	if (!arial.loadFromFile("arial.ttf"))
 	{
-		std::cout << "Nie udalo sie zaladowac czcionki!\n";
+		//std::cout << "Nie udalo sie zaladowac czcionki!\n";
 	};
 
 	string random = "";
@@ -61,7 +62,7 @@ void medium_mode(sf::RenderWindow& okno, int x, int y)
 						okno.close();
 
 					if (zdarzenie.type == sf::Event::KeyPressed && zdarzenie.key.code == sf::Keyboard::Escape)
-						okno.close(); //wyjscie z programu
+						return; //wyjscie z programu
 
 					if (zdarzenie.type == sf::Event::KeyPressed)
 					{

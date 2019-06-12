@@ -7,6 +7,10 @@
 
 #include "targetver.h"
 
+#ifndef STDAFX
+#define STDAFX
+
+
 /*Bibliotek SFML'a*/
 #include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
@@ -32,6 +36,8 @@
 #include <string>
 #include <vector>
 #include <cstdlib>
+#include <cstdio>
+#include <ctime>
 
 /*Zabic to*/
 #include <windows.h>
@@ -39,6 +45,5 @@
 #include <tchar.h>
 
 
-
-
+#endif STDAFX
 // TODO: W tym miejscu odwo³aj siê do dodatkowych nag³ówków wymaganych przez program

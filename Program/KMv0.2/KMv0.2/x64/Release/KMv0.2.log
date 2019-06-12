@@ -1,3 +1,53 @@
-﻿  stdafx.cpp
-  KMv0.2.cpp
-KMv0.2.cpp(5): fatal error C1083: Nie można otworzyć pliku dołącz: 'SFML/Graphics.hpp': No such file or directory
+﻿  KMv0.2.cpp
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(64): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(70): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(76): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(82): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(88): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(98): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(174): warning C4244: "argument": konwersja z "const int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(62): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(68): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(74): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(80): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(86): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\start.h(96): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\easy_mode.h(29): warning C4244: "argument": konwersja z "time_t" do "unsigned int", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\easy_mode.h(44): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\easy_mode.h(42): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\easy_mode.h(31): warning C4101: "key": lokalna zmienna, do której nie istnieje odwołanie
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\training_mode.h(38): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\training_mode.h(36): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\training_mode.h(25): warning C4101: "random": lokalna zmienna, do której nie istnieje odwołanie
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(32): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(38): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(44): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(30): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(36): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\medium_mode.h(42): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(30): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(36): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(42): warning C4244: "argument": konwersja z "int" do "float", możliwa utrata danych
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(28): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(34): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+f:\programowanie\operazionen anfang\clone\kmv0.2\program\kmv0.2\kmv0.2\hard_mode.h(40): warning C4996: 'sf::Text::setColor': został uznany za przestarzały
+  f:\programowanie\operazionen anfang\visualstudio\sfml-2.5.1\include\sfml\graphics\text.hpp(210): note: zobacz deklarację „sf::Text::setColor”
+  Trwa generowanie kodu
+  1 of 393 functions ( 0.3%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    1 functions had inline decision re-evaluated but remain unchanged
+  Zakończono generowanie kodu
+  KMv0.2.vcxproj -> F:\Programowanie\Operazionen Anfang\Clone\KMv0.2\Program\KMv0.2\x64\Release\KMv0.2.exe
